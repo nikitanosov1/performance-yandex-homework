@@ -4,7 +4,7 @@
   "description": "Оптимизировать страницу, выложить результат на Github-Pages и отправить его на проверку на [https://shri-performance.ru/](https://shri-performance.ru/), отправив адрес вашей страницы. Нужно набрать минимум **100 баллов**.",
   "main": "index.js",
   "scripts": {
-    "build": "babel src -d babel_result",
+    "build": "babel src -d babel_result --no-comments",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
