@@ -152,9 +152,11 @@ export default function Main() {
     setActiveTab(event.target.value);
   };
 
-  let sizes = [];
+  let sizes = new Array(TABS.all.items.length);
+  let i = 0;
   const onSize = (size) => {
-    sizes = sizes.concat[size];
+    sizes[i] = size;
+    ++i;
   };
 
   React.useEffect(() => {
