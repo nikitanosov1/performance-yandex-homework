@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useCallback } from "react";
 import Event from "./Event";
 
 const TABS = {
@@ -153,9 +153,9 @@ export default function Main() {
   };
 
   let sizes = [];
-  const onSize = (size) => {
+  const onSize = useCallback((size) => {
     sizes = [...sizes, size];
-  };
+  }, []);
 
   React.useEffect(() => {
     const sumWidth = sizes.reduce((acc, item) => acc + item.width, 0);
